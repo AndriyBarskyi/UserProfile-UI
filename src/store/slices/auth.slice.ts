@@ -1,11 +1,7 @@
-// import axios from "axios";
 import { AuthType } from "./../../types/AuthType";
 
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 
-// const setAuthorization = (token: string) => {
-//   axios.defaults.headers.common["authorization"] = "Bearer " + token;
-// };
 
 const initialState: AuthType = {
   token: null,

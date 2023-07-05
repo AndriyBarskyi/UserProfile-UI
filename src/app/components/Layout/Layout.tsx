@@ -16,7 +16,6 @@ const Layout: FunctionComponent<LayoutProps> = ({
                                                     children,
                                                     childrenClassName,
                                                 }) => {
-    // const [isAuth, setIsAuth] = useState<boolean>(true);
     const {isAuth} = useTypedSelector((state) => state.auth);
     const {profile, profileName} = useTypedSelector((state) => state.profile);
 
@@ -34,21 +33,6 @@ const Layout: FunctionComponent<LayoutProps> = ({
                     className="hidden md:flex md:flex-row md:fixed bg-white justify-center items-center w-full shadow-lg shadow-gray-100 py-4 px-8 z-10">
                     <div className="flex items-center justify-around w-full gap-4">
                         <Logo/>
-                        {/* <img
-              className={`w-10 h-10 rounded-full stroke-black fill-black hover:bg-orange-100 cursor-pointer ${
-                isAuth ? "flex" : "hidden"
-              }`}
-              src={User}
-              alt=""
-              onClick={() => setProfileSidebar(true)}
-            /> */}
-                        {/* <User
-              className={`w-10 h-10 rounded-full stroke-black fill-orange-600 hover:bg-orange-100 cursor-pointer ${
-                isAuth ? "flex" : "hidden"
-              }`}
-              // className="w-10 h-10 fill-black hover:stroke-orange-100"
-              onClick={() => setProfileSidebar(true)}
-            /> */}
 
                         <div
                             className={`${

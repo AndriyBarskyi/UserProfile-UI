@@ -34,7 +34,6 @@ const useProfile = () => {
     const [getUsers] = useGetUsersMutation();
     const [updateUser] = useUpdateUserMutation();
     const [getUserName] = useGetUserNameMutation();
-    // const [getUser] = useGetUserMutation();
 
 
     const getUserHandler = async () => {

@@ -28,7 +28,7 @@ const useSignUp = () => {
         try {
             const authData = await signUp(formData).unwrap();
             navigate("/");
-            // setCredentials(authData);
+            setCredentials(authData);
         } catch (error: any) {
             setBackendErrors(error.data);
         }

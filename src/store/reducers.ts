@@ -11,14 +11,11 @@ import profileSlice from "./slices/profile.slice";
 const apiReducers = {
   [authApi.reducerPath]: authApi.reducer,
   [profileApi.reducerPath]: profileApi.reducer,
-  // [Api.reducerPath]: Api.reducer,
 };
 
 const sliceReducers = {
   auth: authSlice,
   profile : profileSlice,
-  // : Slice,
-  // : Slice,
 };
 
 export const reducers = combineReducers({

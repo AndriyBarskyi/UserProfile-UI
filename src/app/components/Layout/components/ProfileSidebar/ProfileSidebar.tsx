@@ -39,11 +39,6 @@ const ProfileSidebar: FunctionComponent<ProfileSidebarProps> = ({
                 className={`flex flex-col items-center bg-white w-2/12 z-30  overflow-auto`}
             >
                 <div className="flex justify-start items-center border-b border-orange-500 pt-8 pb-4 px-4 w-full gap-4">
-                    {/* <img
-              className={`flex w-10 h-10 rounded-full stroke-black hover:bg-orange-100 cursor-pointer`}
-              src={IBookmark}
-              alt=""
-            /> */}
                     <User className="w-10 h-10 fill-black"/>
                     <div>{profileName.firstName} {profileName.lastName}</div>
                 </div>

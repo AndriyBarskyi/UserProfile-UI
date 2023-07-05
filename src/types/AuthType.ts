@@ -9,7 +9,6 @@ export type SignUpRequestType = {
   firstName: string;
   lastName: string;
   address: string;
-  // repeatPassword: string;
 };
 
 export type AuthType = {

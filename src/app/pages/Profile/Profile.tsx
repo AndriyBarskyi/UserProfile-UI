@@ -46,30 +46,26 @@ const Profile = () => {
                                 </div>
                                 {!isEdit && (
                                     <Button
-                                        // className="w-full"
                                         fill
                                         onClick={() => {
                                             setIsEdit(true);
                                         }}
                                     >
-                                        Редагувати
+                                        Edit
                                     </Button>
                                 )}
                                 {isEdit && (
                                     <Button
                                         fill
-                                        // onClick={() => {
-                                        //   setIsEdit(false);
-                                        // }}
                                     >
-                                        Зберегти
+                                        Save
                                     </Button>
                                 )}
                             </div>
                         </div>
 
                         <div className="flex gap-2 items-center">
-                            <div className="w-1/2">Ім'я:</div>
+                            <div className="w-1/2">Fist name:</div>
                             {!isEdit && <div className="w-full">{profile.firstName}</div>}
                             {isEdit && (
                                 <Input
@@ -83,7 +79,7 @@ const Profile = () => {
                         </div>
 
                         <div className="flex gap-2 items-center">
-                            <div className="w-1/2">Прізвище:</div>
+                            <div className="w-1/2">Last name:</div>
                             {!isEdit && <div className="w-full">{profile.lastName}</div>}
                             {isEdit && (
                                 <Input
@@ -97,7 +93,7 @@ const Profile = () => {
                         </div>
 
                         <div className="flex gap-2 items-center">
-                            <div className="w-1/2">Електронна пошта :</div>
+                            <div className="w-1/2">Email:</div>
                             {!isEdit && <div className="w-full">{profile.email}</div>}
                             {isEdit && (
                                 <Input
@@ -111,7 +107,7 @@ const Profile = () => {
                             )}
                         </div>
                         <div className="flex gap-2 items-center">
-                            <div className="w-1/2">Пароль :</div>
+                            <div className="w-1/2">Password:</div>
                             {!isEdit && <div className="w-full">*********</div>}
                             {isEdit && (
                                 <Input
@@ -123,7 +119,7 @@ const Profile = () => {
                             )}
                         </div>
                         <div className="flex gap-2 items-center">
-                            <div className="w-1/2">Адреса:</div>
+                            <div className="w-1/2">Address:</div>
                             {!isEdit && <div className="w-full">{profile.address}</div>}
                             {isEdit && (
                                 <Input

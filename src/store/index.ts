@@ -1,7 +1,6 @@
 import { configureStore, ThunkAction, Action } from '@reduxjs/toolkit';
 import { reducers } from './reducers';
 import { authApi } from './api/auth.api';
-// import { setupListeners } from "@reduxjs/toolkit/dist/query";
 
 export const store = configureStore({
   reducer: reducers,
@@ -20,4 +19,3 @@ export type AppThunk<ReturnType = void> = ThunkAction<
   Action<string>
 >;
 
-// setupListeners(store.dispatch);
